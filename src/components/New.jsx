@@ -1,10 +1,11 @@
 import Steps from "./design/Steps";
+import Section from "./Section";
 
 const New = () => {
   return (
-    <div className="py-20">
+    <Section className="flex items-center justify-center min-h-screen !px-0 !py-10" crosses>
       <Steps />
-    </div>
+    </Section>
   );
 };
 

@@ -1,16 +1,18 @@
-import { brainwaveSymbol, check } from "../assets";
+import { check } from "../assets";
 import { collabApps, collabContent, collabText } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
-
+import protectlogo from "../assets/protectlogo.png";
 const Collaboration = () => {
   return (
-    <Section crosses>
+    <Section
+      className="dark:rounded-3xl dark:bg-gradient-to-r dark:from-transparent dark:via-pink-500/30 dark:to-transparent dark:bg-opacity-50 bg-gradient-to-r from-transparent via-pink-500/50 to-transparent bg-opacity-50" crosses
+    >
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
-          <h2 className="h2 mb-4 md:mb-8">
-            Why Audio Protect?
+          <h2 className="h2 mb-4 md:mb-8 w-[50rem]">
+            Protect Your Muisc Worldwide via Content ID System
           </h2>
 
           <ul className="max-w-[22rem] mb-10 md:mb-14">
@@ -26,8 +28,7 @@ const Collaboration = () => {
               </li>
             ))}
           </ul>
-
-          <Button>Try it now</Button>
+          <Button>More Features</Button>
         </div>
 
         <div className="lg:ml-auto xl:w-[38rem] mt-4">
@@ -35,14 +36,14 @@ const Collaboration = () => {
             {collabText}
           </p>
 
-          <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
-            <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
+          <div className="relative left-1/2 flex w-[22rem] aspect-square border-2 border-n-3 rounded-full -translate-x-1/2 scale:75 md:scale-100">
+            <div className="flex w-60 aspect-square m-auto border-2 border-n-4 rounded-full">
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                   <img
-                    src={brainwaveSymbol}
-                    width={48}
-                    height={48}
+                    src={protectlogo}
+                    width={55}
+                    height={55}
                     alt="brainwave"
                   />
                 </div>
@@ -58,7 +59,7 @@ const Collaboration = () => {
                   }`}
                 >
                   <div
-                    className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${
+                    className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border-2 border-n-2 rounded-xl -rotate-${
                       index * 45
                     }`}
                   >
@@ -84,3 +85,5 @@ const Collaboration = () => {
 };
 
 export default Collaboration;
+
+

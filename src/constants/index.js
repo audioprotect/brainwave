@@ -6,22 +6,15 @@ import {
   benefitImage2,
   chromecast,
   disc02,
-  discord,
   discordBlack,
   facebook,
-  figma,
   file02,
-  framer,
   homeSmile,
   instagram,
   notification2,
   notification3,
   notification4,
-  notion,
-  photoshop,
   plusSquare,
-  protopie,
-  raindrop,
   recording01,
   recording03,
   roadmap1,
@@ -29,11 +22,9 @@ import {
   roadmap3,
   roadmap4,
   searchMd,
-  slack,
   sliders04,
   telegram,
   twitter,
-  yourlogo,
 } from "../assets";
 
 import merlin from "../assets/merlin.svg";
@@ -41,8 +32,13 @@ import meta from "../assets/meta.svg";
 import youtube from "../assets/youtube.svg";
 import tiktok from "../assets/tiktok.svg";
 
-
-
+import yt from "../assets/youtube-circle.png";
+import tk from "../assets/tiktok-circle.png";
+import fb from "../assets/facebook-circle.png";
+import ig from "../assets/instagram-circle.png";
+import coin from "../assets/coin.png";
+import report from "../assets/report.png";
+import protectlogo from "../assets/protectlogo.png";
 
 export const navigation = [
   {
@@ -141,20 +137,20 @@ export const collabText =
 export const collabContent = [
   {
     id: "0",
-    title: "No Lock-in Subscriptions",
+    title: "YouTube Content-ID",
     text: collabText,
   },
   {
     id: "1",
-    title: "Unlimited Protection",
+    title: "Copyright Protection",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Instagram / Facebook",
   },
   {
     id: "3",
-    title: "Top-notc hSecurity",
+    title: "TikTok Protection",
   },
 ];
 
@@ -162,58 +158,58 @@ export const collabApps = [
   {
     id: "0",
     title: "Figma",
-    icon: figma,
+    icon: yt,
     width: 26,
     height: 36,
   },
   {
     id: "1",
     title: "Notion",
-    icon: notion,
+    icon: yt,
     width: 34,
     height: 36,
   },
   {
     id: "2",
     title: "Discord",
-    icon: discord,
+    icon: ig,
     width: 36,
     height: 28,
   },
   {
     id: "3",
     title: "Slack",
-    icon: slack,
+    icon: tk,
     width: 34,
     height: 35,
   },
   {
     id: "4",
     title: "Photoshop",
-    icon: photoshop,
+    icon: fb,
     width: 34,
     height: 34,
   },
   {
     id: "5",
     title: "Protopie",
-    icon: protopie,
+    icon: coin,
     width: 34,
     height: 34,
   },
   {
     id: "6",
     title: "Framer",
-    icon: framer,
+    icon: protectlogo,
     width: 26,
     height: 34,
   },
   {
     id: "7",
     title: "Raindrop",
-    icon: raindrop,
+    icon: report,
     width: 38,
-    height: 32,
+    height: 40,
   },
 ];
 
